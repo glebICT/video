@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Interactive Video Example</title>
-    <style>
-        .hide { display: none; }
-        .video-container { max-width: 700px; margin: auto; }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script async src="interactive-video.js"></script>
 </head>
 <body>
-    <div class="video-container">
-        <video id="myVideo" width="700" controls>
-            <source src="your-video.mp4" type="video/mp4">
+    <main class="video-container">
+        <video id="myVideo" width="700" controls poster="poster.jpg">
+            <source src="your-video.mp4"  type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div id="options" class="hide">
+        <div id="options">
             <button onclick="playClip('clip1')">Play Clip 1</button>
             <button onclick="playClip('clip2')">Play Clip 2</button>
         </div>
-    </div>
-
-    <script src="interactive-video.js"></script>
+    </main>
 </body>
+</html>
